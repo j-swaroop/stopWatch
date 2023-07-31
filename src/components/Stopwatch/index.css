@@ -1,0 +1,107 @@
+/* Write CSS here */
+.bg-container{
+    background-image: url("https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png");
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    padding: 30px;
+}
+
+.content-container{
+    display: flex;
+    width: 90%;
+    max-width: 1240px;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+@media (max-width: 576px){
+    .bg-container{
+        background-image: url("https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png");
+    }
+    .content-container{
+        width: 90%;
+        align-items: center;
+    }
+}
+.heading{
+    color: #000000;
+    font-family: "Roboto";
+    font-size: 32px;
+    /* text-align: center; */
+    margin-left: 90px;
+}
+.timer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 576px){
+    .timer-container{
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .heading{
+        margin-left: 5px;
+    }
+    .content-container{
+        align-items: center;
+        margin-right: auto;
+    }
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.timer-img{
+    width: 20px;
+    height: 20px;
+}
+.timer-heading{
+    color: #000000;
+    font-family: "Roboto";
+    font-size: 20px;
+    text-align: center;
+
+}
+.timer{
+    color: #000000;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.buttons-container{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    height: 30px;
+    width: 80px;
+    margin-right: 10px;
+    color: #ffffff;
+    font-family: "Roboto";
+    border-radius: 6px;
+    border-width: 0;
+    cursor: pointer;
+}
+.btn-green{
+    background-color: #1db05f;
+}
+.btn-red{
+    background-color: #ef0d36;
+}
+.btn-yellow{
+    background-color: #eaa800;
+}
